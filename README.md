@@ -1,3 +1,15 @@
-# Unit 3 scripting elements
+# Scripting Elements README
 
-This is the working demo of JSP scripting elements.
+This repository contains the code for a web app that allows users to demo the JSP scripting elements. 
+
+## Installation
+
+To install the app, follow these steps:
+
+1. Clone the repository to your local machine.
+
+
+## Usage
+
+1. To use the app, deploy the application to tomcat with the `ant` command.
+2. Go to localhost/8080/java112 
