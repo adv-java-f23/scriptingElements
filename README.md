@@ -1,3 +1,3 @@
-# projects-startup
+# Unit 3 scripting elements
 
-This is the startup project for Advanced Java.
+This is the working demo of JSP scripting elements.
