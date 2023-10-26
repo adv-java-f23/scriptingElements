@@ -11,6 +11,6 @@ To install the app, follow these steps:
 
 ## Usage
 
-1. To use the app, star tomcat: ant tcup
+1. To use the app, start tomcat: ant tcup
 1. Deploy the application to tomcat with the `ant` command.
 1. Go to localhost/8080/java112 in your web browser.
