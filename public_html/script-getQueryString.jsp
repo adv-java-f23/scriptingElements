@@ -30,7 +30,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="content">
                     <header>
                         <h1>Request: getQueryString</h1>
-                        <p>Mini-Team Project</p>
                     </header>
                     <h2>Description</h2>
                     <p>In Java, the <code><b>getQueryString()</b></code> method is a part of the HttpServletRequest interface, which is used to retrieve the query string of an HTTP request made by a client to a web server.</p>

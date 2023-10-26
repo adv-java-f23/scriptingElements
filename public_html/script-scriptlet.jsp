@@ -30,7 +30,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="content">
                     <header>
                         <h1>Scriptlet</h1>
-                        <p>Mini-Team Project</p>
                     </header>
 
                     <h2>Description</h2>
@@ -45,17 +44,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                     <%
                         String message = "Hello, World!";
-                        out.println(message);
+                        out.println("<p>" + message + "</p>");
                     %>
-
-                    <p><img src="images/scriptletExampleLoop.png" alt="Example of a scriptlet"></p>
-
+                    
+                    <p><img src="images/scriptletExampleLoop.png" alt="Example of a scriptlet using a loop"></p>
+                    <ul>
                     <%
                         for (int i = 1; i <= 10; i++) {
                             out.println("<li>" + i + "</li>");
                         }
                     %>
-
+                    </ul>
 
                     <h2>JSP Translator</h2>
                     <p>In the tomcat > work > Catalina > localhost > java112 > apache > jsp directory you can find the complied JSPs. In the service method, the following is how the JSP scriptlet code is built.</p>
@@ -64,11 +63,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                     <h2>Best Practices</h2>
                     <ul>
-                        <li>Limit the amount of code in scriptlets: Keep scriptlets small and focused on a specific task. Avoid using scriptlets for complex business logic or extensive computations. If you need to perform more advanced operations, consider using a Java class or a custom tag library.</li>
-                        <li>Use JavaBeans for data access: Avoid accessing the database or other data sources directly in a scriptlet. Instead, use JavaBeans to encapsulate the data access logic and make it easier to manage.</li>
-                        <li>Minimize output in scriptlets: Avoid generating output directly in a scriptlet. Instead, use JSP expressions or custom tags to generate output in a cleaner and more modular way.</li>
+                        <li>Limit the amount of code in scriptlets: Keep scriptlets small and focused on a specific task. Avoid using scriptlets for complex business logic or extensive computations. If you need to perform more advanced operations, consider using a Java class.</li>
+                        <li>Minimize output in scriptlets: Avoid generating output directly in a scriptlet.</li>
                         <li>Use whitespace and comments: Use whitespace and comments to make scriptlets more readable and easier to maintain. For example, use indentation and line breaks to separate sections of code, and add comments to explain the purpose of the code.</li>
-                        <li>Test scriptlets thoroughly: Since scriptlets are executed on the server-side, they can be difficult to test without running the entire application. It is important to thoroughly test scriptlets to ensure that they work as expected and do not introduce security vulnerabilities or other issues.</li>
+                        <li>Test scriptlets thoroughly: Since scriptlets are executed on the server-side, they can be difficult to test without running the entire application.</li>
                     </ul>
 
 
@@ -76,7 +74,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <ul>
                         <li>Code maintainability: Large scriptlets can make JSPs harder to read and maintain, especially when mixed with HTML code. Scriptlets can also lead to code duplication and make it harder to reuse code across multiple JSPs.</li>
                         <li>Code organization: Scriptlets can make it harder to separate concerns in your application, as business logic and presentation code are mixed together in the same file. This can make it harder to maintain and scale your application over time.</li>
-                        <li>Security vulnerabilities: Scriptlets can potentially introduce security vulnerabilities, especially if they include user input without proper sanitization. It can be difficult to maintain and ensure the security of a large codebase that relies on scriptlets.</li>
                         <li>Testability: Scriptlets can be difficult to test in isolation since they are evaluated on the server-side when the JSP is requested. This can make it harder to write and maintain test cases for your application.</li>
                         <li>Interoperability: Scriptlets can make it harder to integrate your application with other tools and frameworks since they are specific to the JSP technology. This can limit your ability to take advantage of modern web development techniques and best practices.</li>
                     </ul>

@@ -40,27 +40,38 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <p>The syntax for a JSP declaration is: <code><b>&lt;%! ... %&gt;</b></code></p>
 
                     <h2>Examples</h2>
+
                     <h3>Declaring a variable</h3>
-                    The code <code><b>&lt;%! int count = 0; %&gt;</b></code> will declare an integer variable named "count". This variable can then be used in the JSP page to perform calculations or other tasks.
+
+                    <p>The code <code><b>&lt;%! int count = 0; %&gt;</b></code> will declare an integer variable named "count". This variable can then be used in the JSP page to perform calculations or other tasks.</p>
 
                     <%! int count = 0; %>
-                    <br>
 
+                    <br>
 
                     <h3>Declaring a method or class</h3>
+
                     <p>In this example, a declaration is used to define a method named "getGreeting" that takes a String parameter "name" and returns a greeting message. This method can then be used in the JSP page to generate dynamic content.</p>
+                    
                     <img src="images/declarationExample.png">
+                    
                     <br>
+                    <p>
+                        <%!
+                            public String getGreeting(String name) {
+                                return "Hello, " + name + "!";
+                            }
+                        %>
+                    </p>
 
-                    <%!
-                        public String getGreeting(String name) {
-                            return "Hello, " + name + "!";
-                        }
-                    %>
+                    <p>Using an JSP expression <code><b>&lt;&percnt;= getGreeting("World") &percnt;&gt;</b></code>, will display the results of the getGreeting() method to the page.</p>
 
+                    <p>
+                        <%= getGreeting("World") %>
+                    </p>
 
                     <h2>JSP Translator</h2>
-                    <p>In the tomcat > work > Catalina > localhost > java112 > apache > jsp directory you can find the complied JSPs. In the service method, the following is how the JSP includes declaration code is built.</p>
+                    <p>In the tomcat > work > Catalina > localhost > java112 > apache > jsp directory you can find the complied JSPs.</p>
                     <p><img src="images/declarationTranslator.png" src="Translator with a Declaration" width="800"></p>
 
                     <br>

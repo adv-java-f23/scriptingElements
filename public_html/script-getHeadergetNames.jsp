@@ -31,7 +31,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="content">
                     <header>
                         <h1>Request: getHeader/getHeaderNames</h1>
-                        <p>Mini-Team Project</p>
                     </header>
                     <h2>getHeader()</h2>
                     <p>The <code><b>getHeader()</b></code> method is used to retrieve the value of a specific HTTP header from the request object. The request object is an instance of the HttpServletRequest class, which represents an HTTP request made by a client to a web server. The <code><b>getHeader()</b></code> method takes a string parameter that specifies the name of the header whose value is to be retrieved. The method returns a string containing the value of the specified header or null if the header does not exist in the request.</p>
@@ -69,7 +68,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <h2>Best Practices</h2>
                     <ul>
                         <li>Always check if the returned value is null: It's important to check if the header value returned by the getHeader() method is null before using it to avoid NullPointerExceptions.</li>
-                        <li>Avoid hard-coding header names: Hard-coding header names in your code can make it difficult to maintain and update the code later. Instead, you can define constants or enums to represent the header names.</li>
+                        <li>Avoid hard-coding header names: Hard-coding header names in your code can make it difficult to maintain and update the code later. Instead, you can define constants to represent the header names.</li>
                         <li>Be mindful of the case sensitivity of header names: HTTP header names are case-insensitive, but some web servers or clients may treat them as case-sensitive. So, it's a good practice to use the header names consistently and correctly in your code.</li>
                         <li>Don't assume that all headers are present: Not all headers are required in an HTTP request. Some headers may be missing, depending on the client or the server. So, it's important to check if a header exists before attempting to retrieve its value.</li>
                         <li>Don't rely on headers for security: HTTP headers can be easily modified or spoofed by attackers. Therefore, you should not rely solely on headers for implementing security measures in your application.</li>

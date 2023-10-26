@@ -30,7 +30,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="content">
                     <header>
                         <h1>Request: getParameter</h1>
-                        <p>Mini-Team Project</p>
                     </header>
                     <h2>Description</h2>
 
